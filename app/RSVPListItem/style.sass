@@ -1,0 +1,55 @@
+div.RSVPListItemComponent
+  display: flex
+  padding: 20px
+  min-height: 125px
+  line-height: 1.5em
+  transition: all 500ms ease-in-out;
+
+  &:nth-child(odd)
+    background: #f9f9f9
+
+  &.transition-enter
+    margin-top: -125px
+
+  &.transition-enter.transition-enter-active
+    margin-top: 0
+
+.RSVPListItemComponent-avatar-wrapper
+  flex: 0 0 100px
+  display: flex
+  align-items: center
+  justify-content: center
+
+.RSVPListItemComponent-avatar
+  max-height: 100%
+
+.RSVPListItemComponent-info
+  display: flex
+  flex-flow: column
+  justify-content: space-between
+  padding: 0 20px
+  flex: 1
+  color: #777
+
+.RSVPListItemComponent-header
+  font-weight: bold
+  font-size: 1.2em
+  color: #111
+
+.RSVPListItemComponent-meta
+  flex: 0 0 250px
+  display: flex
+  flex-flow: column
+  justify-content: center
+
+.RSVPListItemComponent-location
+  &:before
+    content: '➤'
+    transform: rotate(-50deg)
+    margin-right: 5px
+    display: inline-block
+    color: #aaa
+
+@media (max-width: 650px)
+  .RSVPListItemComponent-meta
+    display: none
