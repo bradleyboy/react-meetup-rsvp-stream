@@ -5,6 +5,11 @@ require('./style.sass');
 const logoURL = require('./images/MeetupLogo.png');
 
 export default class Header extends React.Component {
+  shouldComponentUpdate() {
+    // Component never changes
+    return false;
+  }
+
   render() {
     return (
       <header className="HeaderComponent">

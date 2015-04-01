@@ -26,7 +26,7 @@ export default class Application extends React.Component {
 
       rsvps.add(item.rsvp_id);
 
-      const items = this.state.items.slice(0, 20);
+      const items = this.state.items.slice(0, 29);
       items.unshift(item);
 
       this.setState({items});
